@@ -1,4 +1,4 @@
-@-moz-document domain(wikipedia.org), domain(wiktionary.org) {
+@-moz-document domain(wikipedia.org), domain(wiktionary.org), domain(wikisource.org) {
   body {
     background-color: #222 !important;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
@@ -13,10 +13,28 @@
     background-color: #4183C4 !important;
     color: #fff !important;
   }
-  #p-logo a { background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2265%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ccc%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%3EWikipedia_%3C%2Ftext%3E%3C%2Fsvg%3E") !important; }
-
+  div#footer {
+    display:none;
+  }
+  #editpage-copywarn {
+    display:none;
+  }
+  li#n-sitesupport,li#n-recentchanges,li#n-recentchanges + li {
+    display: none;
+  }
+  #p-logo a {
+    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2265%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ccc%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%3EWikipedia_%3C%2Ftext%3E%3C%2Fsvg%3E") !important;
+    height: 30px;
+  }
+ #p-logo {
+   height: 30px;
+   top: -20px;
+ }
   h1 {
     margin-top: 0em !important;
+  }
+  div#mw-panel {
+    top: 60px;
   }
   a.image img {
     background-color: #888;
@@ -698,7 +716,16 @@
   tr[bgcolor="white"]   { background-color: transparent; }
   tr[bgcolor="gold"]    { background-color: #650; }
   td[bgcolor="#FFBBBB"] { background-color: #301616; }
+  td[bgcolor="#ABCDEF"] { background-color: #1b2c3e; }
+  tr[bgcolor="#EFEFEF"] { background-color: #3e3e3e; }
+  tr[bgcolor="#E3E3E3"] { background-color: #494949; }
 
+  div[style*="background:#e4daed"] {
+    background-color: #3b3640 !important;
+  }
+  div[style*="background: #cedff2"] {
+    background-color: #2a323c !important;
+  }
   
   table[bgcolor="#FFFFFF"] {
     background-color: #333;
@@ -732,6 +759,26 @@
   th[style*="background-color: rgb(173,238,63)"],th[style*="background:rgb(173,238,63)"] { background-color: rgb(48,128,8) !important; }
 }
 
-@-moz-document domain(wikipedia.org), domain(wiktionary.org) {
+@-moz-document domain(wiktionary.org) {
   #p-logo a { background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2265%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ccc%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%3EWiktionary_%3C%2Ftext%3E%3C%2Fsvg%3E") !important; }
+}
+
+@-moz-document domain(wikisource.org) {
+  #p-logo a { background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2265%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ccc%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%3EWikisource_%3C%2Ftext%3E%3C%2Fsvg%3E") !important; }
+  
+  table.headertemplate, div.headertemplate, div.footertemplate, div#divMediaWiki-Proofreadpage_header_template {
+    background-color: #303c30;
+  }
+  .header_notes {
+    background-color: #2e2e30;
+  }
+  .authortemplate {
+    background-color: #484141;
+  }
+  .author_notes {
+    background-color: #302e2f;
+  }
+  .quality4 {
+    background-color: #064006 !important;
+  }
 }
