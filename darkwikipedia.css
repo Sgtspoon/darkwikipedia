@@ -1,4 +1,4 @@
-@-moz-document domain(wikipedia.org), domain(wiktionary.org), domain(wikisource.org), domain(commons.wikimedia.org) {
+@-moz-document domain(wikipedia.org), domain(wiktionary.org), domain(wikisource.org), domain(commons.wikimedia.org), url-prefix(https://tools.wmflabs.org/geohack) {
   body {
     background-color: #222 !important;
     background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEUaGhohISElJSUh9lebAAAB20lEQVRIx4XWuZXDMAwE0C0SAQtggIIYoAAEU+aKOHhYojTrYP2+QfOW/5QIJOih/q8HwF/pb3EX+UPIveYcQGgEHiu9hI+ihEc5Jz5KBIlRRRaJ1JtoSAl5Hw96hLB1/up1tnIXOck5jZQy+3iU2hAOKSH1JvwxHsp+5TLF5MOl1/MQXsVs1miXc+KDbYydyMeUgpPQreZ7fWidbNhkXNJSeAhc6qHmHD8AYovunYyEACWEbyIhNeB9fRrH3hFi0bGPLuEW7xCNaohw1vAlS805nfsrTspclB/hVdoqusg53eH7FWot+wjYpOViX8KbFFKTwlnzvj65P9H/vD0/hibYBGhPwlPO8TmxRsaxsNnrUmUXpNhirlJMPr6Hqq9k5Xn/8iYQHYIuQsWFC6Z87IOxLxHphSY4SpuiU87xJnJr5axfeRd+lnMExXpEWPpuZ1v7qZdNBOjiHzDREHX5fs5Zz9p6X0vVKbKKchlSl5rv+3p//FJ/PYvoKryI8vs+2G9lzRmnEKkh+BU8yDk515jDj/HAswu7CCz6U/Mxb/PnC9N41ndpU4hUU7JGk/C9PmP/M2xZYdvBW2PObyf1IUiIzoHmHW9yTncliYs9A9tVNppdShfgQaTLMf+j3X723tLeHgAAAABJRU5ErkJggg==) !important;
@@ -75,6 +75,9 @@
   
   #mw-page-base {
     background: none;
+  }
+  .mwe-popups {
+    background-color: #303030;
   }
   .mw-body {
     background-color: #181818;
@@ -218,7 +221,7 @@
     border: 1px solid #333;
   }
   .navbox, .navbox-subgroup {
-    background: none repeat scroll 0 0 #323232;
+    background-color: #191919;
   }
   .navbox {
     border: 1px solid #555;
@@ -233,7 +236,7 @@
     background-color: #262630;
   }
   .navbox-even {
-    background-color: #373737;
+    background-color: #1e1e1e;
   }
   pre, .mw-code {
     background-color: #141414;
@@ -348,15 +351,6 @@
     background: #222 !important;
     border-radius: 6px;
     border: 1px solid #555 !important;
-  }
-  td[style*="background-color: #b0c4de"] {
-    background-color: #357 !important;
-  }
-  td[style*="background-color:#cddeff"] {
-    background-color: #468 !important;
-  }
-  tr[style*="background:#efefef"],th[style*="background:#efefef"] {
-    background: #444 !important;
   }
 
   table.dmbox {
@@ -500,11 +494,7 @@
     background-color: #4a4a2a;
   }
   
-  td.diff-context {
-    background-color: #333;
-    border-color: #444;
-    color: #ccc;
-  }
+
   ol.references > li:target {
     background-color: #458;
   }
@@ -630,6 +620,25 @@
   .es1 {  color: #222299 !important;  }
   .sy3 {  color: #444488 !important;  }
   
+  table.inflection-table {
+    color: #ccc !important;
+  }
+  
+  .mw-datatable td {
+    background-color: #181818;
+  }
+  .mw-datatable tr:hover td {
+    background-color: #292930;
+  }
+  .mw-datatable th {
+    background-color: #232330;
+  }
+  
+  .navpopup {
+    background-color: #312f2b;
+    color: #ccc;
+  }
+  
   /* literaaliset */
   table,th,td,tr { border-color: #444 !important; color: #ccc !important; }
 
@@ -637,21 +646,33 @@
     background-color: #222 !important;
   }
   
+  td[style*="background-color: #b0c4de"] {
+    background-color: #357 !important;
+  }
+  td[style*="background-color:#cddeff"] {
+    background-color: #468 !important;
+  }
+  tr[style*="background:#efefef"],th[style*="background:#efefef"] {
+    background: #444 !important;
+  }
   
   th[style*="background-color: #EFEFEF"], th[style*="background-color: darkgrey"], tr[style*="background-color: #f0f0f0"],  td[style*="background-color: lightgrey"], td[style*="background:lightgrey"], td[style*="background:#F8F8F8"], tr[style*="background:#F8F8F8"], tr[style*="background-color:#F6F6F6"], th[style*="background-color:#ededed"], th[style*="background-color: #efefef"], th[style*="background-color: #ededed"], tr[style*="background-color: #f7f7f7"], tr[style*="background:#e0e0e0"] {
     background-color: #333 !important;
   }
   
   td[style*="background:darkgrey"] {
-    background-color: #7d7d7d !important;
+    background-color: #5d5d5d !important;
+  }
+  [style*="background-color: lightgrey"] {
+    background-color: #3b3b3b !important;
   }
   
   th[style*="background-color:#ccc"], th[style*="background:#ccc"], tr[style*="background-color:#cccccc"] {
-    background-color: #5e5e5e !important;
+    background-color: #414141 !important;
   }
   
-  th[style*="background-color: #ddd"], tr[style*="background-color: #ddd"] {
-    background-color: #4f4f4f !important;
+  th[style*="background-color: #ddd"], tr[style*="background-color: #ddd"], tr[style*="background:#DDD"] {
+    background-color: #333333 !important;
   }
   
   td[style*="background-color: #eee"], td[style*="background: #EEEEEE"], th[style*="background: #EEEEEE"], th[style*="background-color: #eee"], tr[style*="background-color:#eeeeee"] {
@@ -659,12 +680,25 @@
   }
   
   div[style*="background:WhiteSmoke"] {
-    background-color: #393939 !important;
+    background-color: #202020 !important;
   }
   
-  th[style*="background-color: #FFFFFF"], tr[style="background-color: #fff;"],   tr[style*="background:#ffffff"], th[style*="background-color:white"], tr[style*="background-color:white"] {
-    background-color: #151515 !important;
+  [style*="background:#F2F2F2"] {
+    background-color: #222222 !important;
   }
+  
+  [style*="background-color: #F0F0F0"], [style*="background:#f0f0f0"] {
+    background-color: #242424 !important;
+  }
+  
+  [style*="background:#fdfdfd"] { background-color: #191919 !important; }
+  
+  [style*="background-color: #FFFFFF"], [style*="background-color: #fff;"],   [style*="background:#ffffff"], [style*="background-color:white"], [style*="background: white"], [style*="background:#fff;"], [style*="background:#FFFFFF"], [style*="background: #FFFFFF"] {
+    background-color: #181818 !important;
+  }
+  
+  [style*="background-color: #C3C3C3"] { background-color: #484848 !important; }
+  [style*="background:#f9f9f9"] { background-color: #1c1c1c !important; }
   
 
 
@@ -684,15 +718,13 @@
   
   tr[style*="background:rgb(90%,90%,100%)"], th[style*="background:rgb(90%,90%,100%)"] { background-color: #224 !important; }
   tr[style*="background:rgb(95%,95%,100%)"] { background-color: #113 !important; }
-  
-  table.inflection-table {
-    color: #ccc !important;
-  }
+ 
 
   /* sininen */
   th[style*="background-color: #E6E6FA"], th[style*="background: #E6E6FA"], th[style*="background-color: lightsteelblue"], th[style*="background: lightsteelblue"], td[style*="background: lightsteelblue"], th[style*="background-color: #CCCCFF"], th[style*="background-color: lavender"], div[style*="background-color: #E6E6FA"], th[style*="background:#B0C4DE"], th[style*="background: #b0c4de"], th[style*="background:#CCE"], th[style*="background:#e8e8ff"], th[style*="background-color: LightBlue"], table[style*="background: #f2f9ff"], th[style*="background: #99c2ff"], th[style*="background-color: #cedeff"],th[style*="background-color:skyblue"], td[style*="background-color: #b3cce4"], td[style*="background-color: lavender"], th[style*="background-color: #B2C8FF"], div[style*="background: #A8EDEF"], td[style*="background:#F7F7FF"], th[style*="background:rgb(80%,80%,100%)"], td[style*="background:rgb(80%,80%,100%)"],  div[style*="background: none repeat scroll 0% 0% rgb(204, 204, 255)"] {
     background-color: #446 !important;
   }
+  
   td[style*="background:#f0f0ff"] {
     background-color: #2a2a30 !important;
   }
@@ -706,27 +738,57 @@
     background-color:#282b30 !important;
     border: 1px solid #444 !important;
   }
+  div[style*="background:#E0E8FF"] {
+   background-color: #242730 !important;
+  }
   
+  [style*="background:#F8F8FF"] {
+    background-color: #2e2e31 !important;
+  }
+  [style*="background: #ccf;"] {
+    background-color: #1d1d31 !important;
+  }
+  [style*="background-color: #99CCFF"] { background-color: #091d31 !important; }
+  
+  [style*="background: rgb(204, 204, 255)"] { background-color: #1d1d31 !important; }
+  [style*="background:rgb(80%,80%,100%)"] { background-color: #1d1d31 !important; }
+  [style*="background-color:#f8f8ff"] { background-color: #2e2e31 !important; }
+  [style*="background-color: #B0C4DE"] { background-color: #2e3d4f !important; }
+  [style*="background-color: #F2F2FC"] { background-color: #303034 !important; }
   
   /* vihreä */
   th[style*="background-color: #B2DFB2"], th[style*="background-color:#ace1af"], th[style*="background:#ADDFAD"], th[style*="background-color: #cde5b2"], tr[style*="background-color: rgb(144,238,144)"], td[style*="background:#EEFFEE"] { 
     background-color: #151 !important;
   }
-  td[style*="background:#f0fff0"] {
+  [style*="background:#f0fff0"] {
     background-color: #2a302a !important;
   }
-  td[style*="background:#d0ffd0"] {
+  [style*="background:#d0ffd0"] {
     background-color: #1e301e !important;
   }
-  td[style*="background: #99FF99"] {
+  [style*="background: #99FF99"] {
     background-color: #093009 !important;
   }
-  div[style*="background:#BBFA7C"] {
+  [style*="background:#BBFA7C"] {
     background-color: #1a3400 !important;
   }
-  div[style*="background:#abd5f5"] {
+  [style*="background:#abd5f5"] {
     background-color: #162a39 !important;
   }
+  [style*="background:#bbeebb"] {
+    background-color: #254025 !important;
+  }
+  [style*="background-color: #cde5b2"] {
+    background-color: #394828 !important;
+  }
+  [bgcolor="#d7f2e1"] {
+    background-color: #2f3d34;
+  }
+  [style*="background-color:#e8f8e8"] {
+    background-color: #303730 !important;
+  }
+  [style*="background: #eeffee"] { background-color: #2a312a !important; }
+  [style*="background:#90EE90"]  { background-color: #0d400d !important; }
   
   
   
@@ -741,6 +803,11 @@
   table[style*="background-color: #fffff3"] {
     background-color: #30302b !important;
   }
+  table[style*="background-color:#F1F1DE"] {
+    background-color: #3e3e34 !important;
+  }
+  [style*="background-color:#F5EAB8"] { background-color: #3a351d !important; }
+  [style*="background-color:#f1f1de"] { background-color: #3e3e34 !important; }
   
   /* violetti */
   td[style*="background-color: #D8BFD8"], div[style*="background-color: #D8BFD8"] {
@@ -769,6 +836,7 @@
   td[style*="background: #FDD"] {
     background-color: #302323 !important;
   }
+  [style*="background-color: #D8BFD8"] { background-color: #544154 !important; }
   
   td[style*="background:whitesmoke"] {
     background-color: #393939 !important;
@@ -776,14 +844,14 @@
   td[style*="background:#D5D5D5"] {
     background-color: #565656 !important;
   }
-  
-  table[style*="background:#FFFFFF"]      { background-color: #181818 !important; }
-  table[style*="background:white"]      { background-color: #181818 !important; }
-  div[style*="background-color: #FFFFFF"] {
-    background-color: transparent !important;
+  [style*="background:#ffd0d0"] {
+    background-color: #311f1f !important;
   }
-  div[style*="background-color: #F0F0F0"] {
-    background-color: #3d3d3d !important;
+  [style*="background: #ffcccc"] {
+    background-color: #311d1d !important;
+  }
+  [bgcolor="#FFcccc"] {
+    background-color: #311d1d;
   }
   
   tr[bgcolor="#E7E7E7"] { background-color: #333; }
@@ -816,6 +884,14 @@
   tr[bgcolor="#EFEFEF"] { background-color: #3e3e3e; }
   tr[bgcolor="#E3E3E3"] { background-color: #494949; }
   td[bgcolor="#CCCCCC"] { background-color: #5e5e5e; }
+  th[bgcolor="#FFDDAA"] { background-color: #312410; }
+  th[bgcolor="#FFEEDD"] { background-color: #312a24; }
+  td[bgcolor="#FFEEDD"] { background-color: #312a24; }
+  td[bgcolor="#DDDDDD"] { background-color: #333333; }
+  td[bgcolor="#DDEEFF"] { background-color: #242a31; }
+  tr[bgcolor="#AAD0FF"] { background-color: #101f31; }
+  tr[bgcolor="#F9F9F9"] { background-color: #1c1c1c; }
+  
   
   td[style*="background:#F8F8FF"] { background-color: #2d2d30 !important;}
 
@@ -848,6 +924,11 @@
   table[style*="background-color: #ecfcf4"] {
     background-color: #233 !important;
   }
+  table[style*="background: #f9f9f9"] {
+    background: #1c1c1c !important;
+  }
+  
+  [style*="background:#efefef"] { background-color: #242424 !important; }
   
   
   /* taxobox */
@@ -864,6 +945,36 @@
   .bg-orange {
     background-color: #342500;
   }
+  td.diff-deletedline {
+    border-color: #41362b !important;
+  }
+  td.diff-deletedline .diffchange {
+    background-color: #523b2c;
+  }
+  td.diff-addedline .diffchange {
+    background-color: #22435d;
+  }
+  td.diff-addedline {
+    border-color: #2b3261 !important;
+  }
+  td.diff-context {
+    background-color: #1c1c1c;
+    border-color: #2c2c2c;
+    color: #ccc;
+  }
+  .flaggedrevs-color-2 {
+    background-color: #1c311c;
+  }
+  .fr-watchlist-pending-notice {
+    background-color: #322b21;
+  }
+  .flaggedrevs-pending {
+    background-color: #312a10;
+  }
+  
+  .plainlinks {
+    color: #888 !important;
+  }
 }
 
 @-moz-document domain(wiktionary.org) {
@@ -871,6 +982,10 @@
   
   .checktrans {
     background-color: #2a302a;
+  }
+  
+  div#searchmenu-new-preload {
+    display:none;
   }
 }
 
@@ -895,5 +1010,51 @@
 }
 
 @-moz-document domain(commons.wikimedia.org) {
-  #p-logo a { background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2265%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ccc%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%3Ecommons_%3C%2Ftext%3E%3C%2Fsvg%3E") !important; }
+  #p-logo a {
+    background-image: url("data:image/svg+xml,%3C%3Fxml%20version%3D%221.0%22%20standalone%3D%22no%22%3F%3E%3C!DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.1%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FGraphics%2FSVG%2F1.1%2FDTD%2Fsvg11.dtd%22%3E%3Csvg%20width%3D%22100%25%22%20height%3D%22100%25%22%20version%3D%221.0%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ctext%20x%3D%2250%25%22%20y%3D%2265%25%22%20text-anchor%3D%22middle%22%20fill%3D%22%23ccc%22%20font-family%3D%22monospace%22%20font-size%3D%2218%22%3Ecommons_%3C%2Ftext%3E%3C%2Fsvg%3E") !important;
+  }
+  
+  div[style*="color: #000;"] {
+    color: #888 !important;
+  }
+  
+  #main-page-langbar {
+    background-color: #181818 !important;
+  }
+}
+
+@-moz-document url-prefix(https://tools.wmflabs.org/geohack) {
+  #mw_content {
+    background-color: #181818;
+    border-color: #4e4e4e;
+  }
+  #mw_portlets {
+    background-color: #242424;
+    border-color: #4e4e4e;
+  }
+  .portlet h5 {
+    background-color: #333333;
+  }
+  div,p,dd,dt {
+    color: #ccc;
+  }
+  .directory tr:hover {
+    background-color: #31241d !important;
+  }
+  [style="background:#f5f5f5"] {
+    background-color: #202020 !important;
+  }
+  .mw-editsection {
+    font-size: 50%;
+    padding-left: 10px;
+  }
+}
+
+@-moz-document url-prefix(http://tools.freeside.sk/geolocator/) {
+  body,div,h1,h2,h3,td {
+    color: #ccc;
+  }
+  #container {
+    background: #222;
+  }
 }
